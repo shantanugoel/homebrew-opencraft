@@ -1,6 +1,6 @@
 cask "opencraft" do
-  version "0.2.0"
-  sha256 "f8431873b8a304ab913030715b2ca6823375a5c7329c8584c53c75509051f6a3"
+  version "0.4.0"
+  sha256 "6b4b9bec4ae49c5b55364b001b627b8b1dd553e0017f598cb843c1696b834922"
 
   url "https://github.com/shantanugoel/OpenCraft/releases/download/v#{version}/OpenCraft-#{version}-arm64.dmg"
   name "OpenCraft"
