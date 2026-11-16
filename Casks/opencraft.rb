@@ -1,6 +1,6 @@
 cask "opencraft" do
-  version "0.4.0"
-  sha256 "6b4b9bec4ae49c5b55364b001b627b8b1dd553e0017f598cb843c1696b834922"
+  version "0.5.0"
+  sha256 "0271e028806757a7d5d369d396e8bb49d2fbe5f3e7544f39f5fd4e61a3d27c42"
 
   url "https://github.com/shantanugoel/OpenCraft/releases/download/v#{version}/OpenCraft-#{version}-arm64.dmg"
   name "OpenCraft"
@@ -16,6 +16,9 @@ cask "opencraft" do
   depends_on macos: :monterey
 
   app "OpenCraft.app"
+  # The command-line client "opencraft ctl" (decision 0040, section 4). The
+  # link has the name of the executable: opencraft.
+  binary "#{appdir}/OpenCraft.app/Contents/MacOS/opencraft"
 
   uninstall quit: "com.shantanugoel.opencraft"
 
